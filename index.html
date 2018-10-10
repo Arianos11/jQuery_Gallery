@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Gallery</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="ikona.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="ikona.ico" type="image/x-icon"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <section class="row">
+        <div class="col-md-12" id="main_picture">
+        </div>
+        <div class="col-md-12"><br/><br/></div>
+        <div class="col-md-1"></div>
+
+        <div class="col-md-2"><a style="cursor: pointer;" onclick="number = 1; show();"><img src="img/1.jpg" class="img-responsive"></a></div>
+        <div class="col-md-2"><a style="cursor: pointer;" onclick="number = 2; show();"><img src="img/2.jpg" class="img-responsive"></a></div>
+        <div class="col-md-2"><a style="cursor: pointer;" onclick="number = 3; show();"><img src="img/3.jpg" class="img-responsive"></a></div>
+        <div class="col-md-2"><a style="cursor: pointer;" onclick="number = 4; show();"><img src="img/4.jpg" class="img-responsive"></a></div>
+        <div class="col-md-2"><a style="cursor: pointer;" onclick="number = 5; show();"><img src="img/5.jpg" class="img-responsive"></a></div>
+
+        <div class="col-md-1"></div>
+    </section>
+</div>
+
+<script>
+    var number;
+  $(document).ready(function(){
+     var picture = "<img src='img/1.jpg' class='img-responsive'>";
+      $('#main_picture').html(picture);
+  });
+    function show()
+    {
+        $('#main_picture').fadeOut(500).fadeIn(500);
+        var zdjecie = "<img src='img/"+number+".jpg' class='img-responsive'>";
+        setTimeout(function(){
+        $("#main_picture").html(zdjecie);
+        }, 500);
+    }
+</script>
+
+</body>
