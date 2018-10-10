@@ -1,0 +1,24 @@
+body
+{
+    background: linear-gradient(to right, rgb(97, 144, 232), rgb(167, 191, 232));
+}
+
+#main_picture
+{
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    height: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#mini
+{
+    background-color: white;
+    padding: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
